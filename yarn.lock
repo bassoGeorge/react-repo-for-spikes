@@ -1813,7 +1813,7 @@ prettier@^2.8.8:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.8.tgz#e8c5d7e98a4305ffe3de2e1fc4aca1a71c28b1da"
   integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
 
-prop-types@^15.8.1:
+prop-types@^15.5.7, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -1849,6 +1849,13 @@ react-refresh@^0.14.0:
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
   integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
+
+react-scroll-sync-hook@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/react-scroll-sync-hook/-/react-scroll-sync-hook-0.0.3.tgz#f329ddcd570b6f3437919884c0cb8ab4ca52a8d5"
+  integrity sha512-qaKbUQ3h3a5dEtqb6HZmv9f+oRTOtQkWGVbhf0z6HQ99rO/ZMd6C0ahiYDxxWFMBj7s8Gse6hcfdJuTSGnQx2g==
+  dependencies:
+    prop-types "^15.5.7"
 
 react@^18.2.0:
   version "18.2.0"
