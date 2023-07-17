@@ -1,9 +1,8 @@
-import { MarSpike } from "./lib/MarSpike";
-
+import { MarSpike2 } from "./lib/MarSpike2";
 function App() {
   return (
     <main className="p-9">
-      <MarSpike />
+      <MarSpike2 />
     </main>
   );
 }

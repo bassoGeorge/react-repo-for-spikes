@@ -1,4 +1,5 @@
 import { SyncScroll, useSyncScroll } from "./scrollSync/ScrollSync";
+import { LeftRow, RightRow } from "./spike-components";
 
 export function MarSpike() {
   return (
@@ -34,48 +35,4 @@ function SpikeContent() {
       </div>
     </div>
   );
-}
-
-import PropTypes from "prop-types";
-
-function Row({ children, odd }) {
-  return (
-    <div className={`h-9 border w-max ${odd ? "bg-slate-200" : ""}`}>
-      {children}
-    </div>
-  );
-}
-
-Row.propTypes = {
-  children: PropTypes.node.isRequired,
-  odd: PropTypes.bool.isRequired,
-};
-
-function LeftRow({ name, odd }) {
-  return (
-    <div className={`h-9 border ${odd ? "bg-slate-200" : ""}`}>{name}</div>
-  );
-}
-
-LeftRow.propTypes = {
-  name: PropTypes.string.isRequired,
-  odd: PropTypes.bool.isRequired,
-};
-
-function RightRow({ odd }) {
-  return (
-    <div className={`flex h-9 border w-max ${odd ? "bg-slate-200" : ""}`}>
-      {Array.from({ length: 48 }).map((_, i) => (
-        <Cell key={i} />
-      ))}
-    </div>
-  );
-}
-
-RightRow.propTypes = {
-  odd: PropTypes.bool.isRequired,
-};
-
-function Cell() {
-  return <div className="w-12 h-full border shrink-0"></div>;
 }
